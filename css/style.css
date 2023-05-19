@@ -5,6 +5,19 @@ header{
     background-color: #f8f9fa;
 }
 
+.navbar-header{
+    background-color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /* WRAPPER */
 
 .wrapper{
@@ -26,10 +39,15 @@ header{
     background-repeat: no-repeat;
 }
 
+.sidebar .icon{
+    display: none;
+}
+
 /* MAIN */
 
 main{
     flex-grow: 1;
+    flex-shrink: 1;
     overflow: auto;
 }
 
@@ -39,6 +57,12 @@ main{
 
 @media screen and  (min-width: 992px) {
     .sidebar{
-        flex-basis: 200px
+        flex-basis: 200px;
+    }
+
+    .sidebar .icon{
+        display: inline;
     }
 }
+
+/*#ff8f00 COLOR ORANGE*/
