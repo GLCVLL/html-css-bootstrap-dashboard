@@ -5,21 +5,40 @@ header{
     background-color: #f8f9fa;
 }
 
-/* MAIN */
+/* WRAPPER */
 
-main{
+.wrapper{
     height: calc(100vh - 80px);
-    
+    display: flex;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-    width: 50px;
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 100%;
     background-color: black;
     background-image: url(../img/sidebar-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* MAIN */
+
+main{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+/************************/
+/***    RESPONSIVE    ***/
+/************************/
+
+@media screen and  (min-width: 992px) {
+    .sidebar{
+        flex-basis: 200px
+    }
 }
