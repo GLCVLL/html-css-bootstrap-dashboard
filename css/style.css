@@ -1,12 +1,8 @@
 /* HEADER */
 
-header{
-    height: 80px;
+.page-header{
+    height: 50px;
     background-color: #f8f9fa;
-}
-
-.navbar-header{
-    background-color: white;
 }
 
 ul{
@@ -15,22 +11,23 @@ ul{
 
 a{
     text-decoration: none;
-    color: white;
+}
+
+.dropdown .fa-bell{
+    color: orange;
 }
 
 /* WRAPPER */
 
 .wrapper{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
     display: flex;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-    flex-basis: 50px;
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex: 0 0 50px;
     height: 100%;
     background-color: black;
     background-image: url(../img/sidebar-bg.png);
@@ -46,8 +43,7 @@ a{
 /* MAIN */
 
 main{
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1 1 auto;
     overflow: auto;
 }
 
@@ -55,12 +51,35 @@ main{
 /***    RESPONSIVE    ***/
 /************************/
 
+@media screen and  (min-width: 425px) {
+    
+    .desktop{
+        display: none;
+    }
+
+    .navbar-icons{
+        display: none;
+    }
+}
+
 @media screen and  (min-width: 992px) {
     .sidebar{
         flex-basis: 200px;
     }
 
     .sidebar .icon{
+        display: inline;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block
+    }
+
+    .navbar-icons{
         display: inline;
     }
 }
