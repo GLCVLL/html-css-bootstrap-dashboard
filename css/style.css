@@ -14,7 +14,7 @@ a{
 }
 
 .dropdown .fa-bell{
-    color: orange;
+    color: #ff8f00;
 }
 
 /* WRAPPER */
@@ -83,5 +83,3 @@ main{
         display: inline;
     }
 }
-
-/*#ff8f00 COLOR ORANGE*/

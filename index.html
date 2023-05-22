@@ -17,8 +17,8 @@
 <body>
     <!-- PAGE HEADER-->
     <header class="page-header">
-        <div class="row bg-white">
-            <div class="col">
+        <div class="row bg-white container-fluid d-flex align-items-center h-100 justify-content-between">
+            <div class="col-auto">
                 <a class="navbar-brand mobile" href="#">
                     <img src="img/mobile-logo.png" alt="logo mobile" width="50" height="100%">
                 </a>
@@ -31,22 +31,23 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
             </div>
-            <div class="col d-flex">
-                <div class="navbar-icons">
+            <div class="col-auto d-flex">
+                <div class="navbar-icons px-2">
                     <a href="#" class="text-black px-1"><i class="fa-solid fa-list-ul fa-lg"></i></a>
                     <a href="#" class="text-black px-1"><i class="fa-solid fa-circle-question fa-lg"></i></a>
                     <a href="#" class="text-black px-1"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
                 </div>
-                <div class="dropdown">
-                    <div>
-                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell fa-lg"></i></a>
-                    </div>
+                <div class="dropdown px-2">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell"></i>
+                    </a>
+                  
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Profilo</a></li>
-                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </div>
     </header>
