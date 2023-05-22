@@ -17,6 +17,14 @@ a{
     color: #ff8f00;
 }
 
+.form-control{
+    font-size: 12px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
 /* WRAPPER */
 
 .wrapper{
@@ -47,6 +55,20 @@ main{
     overflow: auto;
 }
 
+/* HEADER MAIN */
+
+.header-main{
+    background-color: #1b72e8;
+    color: white;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #165bba;
+    border-radius: 40px;
+    font-size: 10px;
+    padding: 5px;
+}
+
 /************************/
 /***    RESPONSIVE    ***/
 /************************/
@@ -58,6 +80,10 @@ main{
     }
 
     .navbar-icons{
+        display: none;
+    }
+
+    .nav-pills.dn li:nth-last-child(-n+3){
         display: none;
     }
 }
@@ -81,5 +107,13 @@ main{
 
     .navbar-icons{
         display: inline;
+    }
+
+    .nav-pills.dn li:nth-last-child(-n+3){
+        display: block;
+    }
+
+    .nav-pills.dn li:nth-child(3) {
+        display: none;
     }
 }

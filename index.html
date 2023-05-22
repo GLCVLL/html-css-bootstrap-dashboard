@@ -17,7 +17,7 @@
 <body>
     <!-- PAGE HEADER-->
     <header class="page-header">
-        <div class="row bg-white container-fluid d-flex align-items-center h-100 justify-content-between">
+        <div class="row m-0 bg-white container-fluid d-flex align-items-center h-100 justify-content-between">
             <div class="col-auto">
                 <a class="navbar-brand mobile" href="#">
                     <img src="img/mobile-logo.png" alt="logo mobile" width="50" height="100%">
@@ -27,17 +27,22 @@
                 </a>
             </div>
             <div class="col-8">
-                <form role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
+                <nav class="navbar bg-light">
+                    <form class="container-fluid">
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </form>
+                  </nav>
             </div>
             <div class="col-auto d-flex">
-                <div class="navbar-icons px-2">
+                <div class="navbar-icons px-1">
                     <a href="#" class="text-black px-1"><i class="fa-solid fa-list-ul fa-lg"></i></a>
                     <a href="#" class="text-black px-1"><i class="fa-solid fa-circle-question fa-lg"></i></a>
                     <a href="#" class="text-black px-1"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
                 </div>
-                <div class="dropdown px-2">
+                <div class="dropdown px-1">
                     <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="fa-solid fa-bell"></i>
                     </a>
@@ -79,18 +84,61 @@
         <!-- MAIN CONTENT-->
         <main>
             <!-- OFFCANVAS SECTION -->
-            <section>
+            <header class="header-main">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col">
+                        <div class="py-3 col-xs col-md-4 order-md-1 col-lg-auto">
                             <span>Nuovo studente</span>
-                            <button></button>
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></button>
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                  <p>Try scrolling the rest of the page to see this option in action.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                        <div class="py-3 col-xs col-md-4 col-lg-5">
+                            <div class="d-flex align-items-center">
+                                <h2>Boolean</h2>
+                                <ul class="nav nav-pills px-1">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#">Piano Blaze</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="nav nav-pills dn px-1 col-lg-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">3 App</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angles-right px-1"></i>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-plus"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Boolean mobile app</a>
+                                    </li>
+                                    <li class="nav-item px-1">
+                                        <a class="nav-link active" aria-current="page" href="#">Boolean web app</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Boolean blog app</a>
+                                    </li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="py-3 col-xs col-md-4">
+                            <h6>Studenti online negli ultimi 30 minuti</h6>
+                            <h3>125</h3>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </header>
         </main>
     </div>
 </body>
